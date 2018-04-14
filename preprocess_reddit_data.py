@@ -224,7 +224,6 @@ class Utils:
 
 
 class AbstactRepresentation:
-
 	@staticmethod
 	def remove_short_sentences_and_named_entities(nlp, input_dir):
 		'''

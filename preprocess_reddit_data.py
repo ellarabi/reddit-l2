@@ -232,8 +232,8 @@ class AbstactRepresentation:
 		:param input_dir: input files dir to traverse
 		:return:
 		'''
-		for filename in sorted(glob.glob(input_dir + 'reddit.V*.nometa.tc')):
-			outfile = filename + '.trial'
+		for filename in sorted(glob.glob(input_dir + 'reddit.*.tc')):
+			outfile = filename + '.masked.entities'
 
 			count = 0
 			with codecs.open(filename, 'r', 'utf-8') as fin, codecs.open(outfile, 'w', 'utf-8') as fout:
@@ -318,6 +318,9 @@ if __name__ == '__main__':
 	import spacy
 	# should work best for NER (https://spacy.io/usage/v2)
 	input_dir = 'directory with input files, the data is available at http://cl.haifa.ac.il/projects/l2'
+
+	SimpleTrueCasing.true_case(input_dir)
+
 	nlp = spacy.load('en_core_web_lg', disable=['parser', 'tagger'])
 	processor.remove_short_sentences_and_named_entities(nlp, input_dir)
 

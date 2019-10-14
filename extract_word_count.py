@@ -90,11 +90,11 @@ CHUNK_SIZE = 2500000
 label = collections.namedtuple('label', ['datafile', 'name', 'chunks'])
 VOCAB_FILENAME = 'vocabulary.100.dat'
 
+# invocation: "python extract_word_count.py data.reddit.voc.cfg"
+
 if __name__ == '__main__':
 
 	cl = Classification()
-	#todo: input configuration is data.reddit.voc.cfg
-	#todo: crerate a light copy of this file for counts extraction
 	cl.create_features_map(sys.argv[1], VOCAB_FILENAME)
 
 

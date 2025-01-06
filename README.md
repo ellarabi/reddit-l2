@@ -7,4 +7,4 @@ Script for cleanup, simple truecasing, pos-tagging and NER for text collected fr
 The code makes use of COCA ngrams (https://www.ngrams.info/download_coca.asp), spacy NLP package (https://spacy.io/)
 and polyglot language detector (http://polyglot.readthedocs.io/en/latest/Detection.html).
 
-The data (extended through Sep 2018) can be downloaded from http://www.cs.toronto.edu/~ella/reddit.l2.post.tar.gz (posts) and http://www.cs.toronto.edu/~ella/reddit.l2.sent.tar.gz (sentences).
+The data (extended through Sep 2018) is available per request - contact me at ellarabi@gmail.com.
